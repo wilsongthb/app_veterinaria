@@ -75,7 +75,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    App - Veterinaria
+                    {{ config('app.name', 'Laravel') }}
                 </div>
 
                 <div class="links">

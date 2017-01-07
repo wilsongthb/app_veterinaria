@@ -43,7 +43,13 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                        <li><a href="{{ url('/inicio') }}">Inicio</a></li>
+                        <li><a href="{{ url('/productor') }}">Informacion del Productor</a></li>
+                        <li><a href="{{ url('/consultas') }}">Consultas</a></li>
+                        <li><a href="{{ url('/catalogo') }}">Catalogo de Toros y Vacas</a></li>
+                        <li><a href="{{ url('/ajustes') }}">Ajustes</a></li>
+                        <li><a href="{{ url('/comentarios') }}">Comentarios</a></li>
+                        <li><a href="{{ url('/ayuda') }}">Ayuda</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
