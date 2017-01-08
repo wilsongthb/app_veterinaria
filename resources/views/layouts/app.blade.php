@@ -42,15 +42,6 @@
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        <li><a href="{{ url('/inicio') }}">Inicio</a></li>
-                        <li><a href="{{ url('/productor') }}">Informacion del Productor</a></li>
-                        <li><a href="{{ url('/consultas') }}">Consultas</a></li>
-                        <li><a href="{{ url('/catalogo') }}">Catalogo de Toros y Vacas</a></li>
-                        <li><a href="{{ url('/ajustes') }}">Ajustes</a></li>
-                        <li><a href="{{ url('/comentarios') }}">Comentarios</a></li>
-                        <li><a href="{{ url('/ayuda') }}">Ayuda</a></li>
-                    </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
@@ -58,14 +49,23 @@
                         @if (Auth::guest())
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    Autenticacion <span class="caret"></span>
+                                    Cuenta <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="{{ url('/login') }}">Login</a></li>
-                                    <li><a href="{{ url('/register') }}">Register</a></li>
+                                    <li><a href="{{ url('/login') }}">Ingresar</a></li>
+                                    <li><a href="{{ url('/register') }}">Registrarse</a></li>
                                 </ul>
                             </li>
                         @else
+                            <ul class="nav navbar-nav">
+                                <li><a href="{{ url('/inicio') }}">Inicio</a></li>
+                                <li><a href="{{ url('/productor') }}">Informacion del Productor</a></li>
+                                <li><a href="{{ url('/consultas') }}">Consultas</a></li>
+                                <li><a href="{{ url('/catalogo') }}">Catalogo de Toros y Vacas</a></li>
+                                <li><a href="{{ url('/ajustes') }}">Ajustes</a></li>
+                                <li><a href="{{ url('/comentarios') }}">Comentarios</a></li>
+                                <li><a href="{{ url('/ayuda') }}">Ayuda</a></li>
+                            </ul>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -76,7 +76,7 @@
                                         <a href="{{ url('/logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Logout
+                                            Salir
                                         </a>
 
                                         <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">

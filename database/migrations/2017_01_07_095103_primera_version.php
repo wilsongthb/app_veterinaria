@@ -38,6 +38,7 @@ class PrimeraVersion extends Migration
             $table->string('padre_nombre')->nullable();
             $table->string('color', '30');
             $table->string('raza', '50');
+            $table->string('imagen')->default('/images/default.jpg');
 
             //relacion entre ganado y productor
             $table->integer('productor_id')->unsigned();

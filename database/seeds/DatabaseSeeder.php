@@ -99,5 +99,17 @@ class DatabaseSeeder extends Seeder
             'productor_id' => '1',
             'sexo' => 'V'
         ]);
+        DB::table('historial_ganado')->insert([
+            'titulo' => 'ULTIMO PARTO',
+            'descripcion' => 'tiende a quedarse postrada',
+            'ganado_id' => '1',
+            'created_at' => '2017-01-01',
+        ]);
+        DB::table('historial_ganado')->insert([
+            'titulo' => 'ULTIMO PARTO',
+            'descripcion' => 'tiene el problema de retencion de placenta',
+            'ganado_id' => '1',
+            'created_at' => '2016-07-01',
+        ]);
     }
 }
