@@ -17,13 +17,14 @@ Route::get('/', function () {
 
 # app veterinaria urls
 Route::get('/inicio', 'appController@index');
-Route::get('/productor', 'appController@function');
+Route::get('/productor', 'appController@productor');
 Route::get('/consultas', 'appController@function');
-Route::get('/catalogo', 'appController@function');
+Route::get('/catalogo', 'appController@catalogo');
 Route::get('/ajustes', 'appController@function');
 Route::get('/comentarios', 'appController@function');
 Route::get('/ayuda', 'appController@function');
 
+Route::get('/map', function () { return view('app.map'); });
 
 Auth::routes();
 
