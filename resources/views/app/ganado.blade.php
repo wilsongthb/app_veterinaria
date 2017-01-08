@@ -8,24 +8,28 @@
         </div>
     </div>
     <div class="row">
-        @if(count($incidencias) != 0)
-            <div class="col-md-4">
-                <h4>Incidencias</h4>
-                @foreach($incidencias as $fila)
-                    <table class="table table-bordered">
-                        @foreach($fila as $clave => $item)
-                            <tr>
-                                <th>{{ $clave }}</th>
-                                <td>{{ $item }}</td>
-                            </tr>
-                        @endforeach
-                    </table>
-                @endforeach
-            </div>
-        @endif
+        <div class="col-md-4">
+            <h4>Incidencias</h4>
+            <a href="#">
+                <button class="btn btn-success">Registra Nuevo Incidente</button>
+            </a>
+            @foreach($incidencias as $fila)
+                <table class="table table-bordered" style="margin-top: 22px">
+                    @foreach($fila as $clave => $item)
+                        <tr>
+                            <th>{{ $clave }}</th>
+                            <td>{{ $item }}</td>
+                        </tr>
+                    @endforeach
+                </table>
+            @endforeach
+        </div>
         <div class="col-md-4">
             <h4>Ganado</h4>
-            <table class="table table-bordered">
+            <a href="#">
+                <button class="btn btn-success">Editar</button>
+            </a>
+            <table class="table table-bordered" style="margin-top: 22px">
                 <tr>
                     <td colspan="2">
                         <img src="{{ url($ganado->imagen) }}" alt="default">
@@ -37,7 +41,7 @@
                         <td>{{ $item }}</td>
                     </tr>
                 @endforeach
-            </table>
+            </table>            
         </div>
         <div class="col-md-4">
             <h4>Ubicacion</h4>

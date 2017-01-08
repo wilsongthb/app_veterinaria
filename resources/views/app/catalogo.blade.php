@@ -18,9 +18,20 @@
                         <th>Nombre</th>
                         <td>{{ $ganado->nombre }}</td>
                     </tr>
+                    <tr>
+                        <th>Sexo</th>
+                        <td>{{ $ganado->sexo }}</td>
+                    </tr>
                 </table>
             </div>
         @endforeach
+        <div class="col-md-3">
+            <div class="container">
+                <a href="#">
+                    <button class="btn btn-success">Agregar un(a) Vaca/Toro</button>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 @endsection

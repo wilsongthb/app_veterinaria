@@ -31,7 +31,7 @@ class PrimeraVersion extends Migration
             $table->string('codigo', '15')->nullable()->default('00000');
             $table->string('ubicacion')->nullable();
             $table->char('sexo', '1');
-            $table->char('estado', '1')->nullable();
+            $table->string('estado', '15')->nullable();
             $table->string('nombre');
             $table->date('fecha_nacimiento');
             $table->string('madre_nombre')->nullable();

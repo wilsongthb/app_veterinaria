@@ -60,10 +60,7 @@
                             <ul class="nav navbar-nav">
                                 <li><a href="{{ url('/inicio') }}">Inicio</a></li>
                                 <li><a href="{{ url('/productor') }}">Informacion del Productor</a></li>
-                                <li><a href="{{ url('/consultas') }}">Consultas</a></li>
                                 <li><a href="{{ url('/catalogo') }}">Catalogo de Toros y Vacas</a></li>
-                                <li><a href="{{ url('/ajustes') }}">Ajustes</a></li>
-                                <li><a href="{{ url('/comentarios') }}">Comentarios</a></li>
                                 <li><a href="{{ url('/ayuda') }}">Ayuda</a></li>
                             </ul>
                             <li class="dropdown">
@@ -72,6 +69,10 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                    <li><a href="{{ url('/consultas') }}">Consultas</a></li>
+                                    <li><a href="{{ url('/ajustes') }}">Ajustes</a></li>
+                                    <li><a href="{{ url('/comentarios') }}">Comentarios</a></li>
+                                    <li class="divider"></li>
                                     <li>
                                         <a href="{{ url('/logout') }}"
                                             onclick="event.preventDefault();

@@ -13,7 +13,7 @@ return [
     */
 
     // 'name' => 'Laravel',
-    'name' => 'APP_VETERINARIA',
+    'name' => 'Deteccion de Vacas en Celo',
 
     /*
     |--------------------------------------------------------------------------

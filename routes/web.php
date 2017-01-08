@@ -23,7 +23,7 @@ Route::get('/catalogo', 'appController@catalogo');
 Route::get('/ganado/{id}', 'appController@ganado');
 Route::get('/ajustes', 'appController@function');
 Route::get('/comentarios', 'appController@function');
-Route::get('/ayuda', 'appController@function');
+Route::get('/ayuda', 'appController@ayuda');
 
 # ruta del mapa de la app
 Route::get('/map', function () { return view('app.map'); });
